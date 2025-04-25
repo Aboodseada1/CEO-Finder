@@ -8,10 +8,10 @@ A Python script to find the CEO or other key executive of a company using its na
 * Accepts company name or company domain/URL as input.
 * Integrates with a SearXNG instance for privacy-respecting web searches.
 * Supports multiple LLM providers:
-  *   Google Gemini (`gemini`)
-  *   OpenAI (`openai`)
-  *   Groq (`groq`)
-  *   Local Ollama (`ollama`)
+    *   Google Gemini (`gemini`)
+    *   OpenAI (`openai`)
+    *   Groq (`groq`)
+    *   Local Ollama (`ollama`)
 * Allows specifying the *exact* LLM model via command-line (`--llm-model`).
 * Uses provider-specific fallback model lists if no exact model is specified.
 * Standalone script design (dependencies are external libraries).
@@ -24,46 +24,42 @@ A Python script to find the CEO or other key executive of a company using its na
 2. **Pip:** Python package installer.
 3. **SearXNG Instance:** You need access to a running SearXNG instance. This could be self-hosted or a public instance (use public instances responsibly). Note the base URL of the instance (e.g., `http://127.0.0.1:8080`).
 4. **LLM API Keys (Conditional):**
-   * If using `gemini`, `openai`, or `groq`, you need valid API keys for those services.
+    *   If using `gemini`, `openai`, or `groq`, you need valid API keys for those services.
 5. **Ollama (Conditional):**
-   * If using the `ollama` provider, you need Ollama installed, running, and the desired model(s) pulled (e.g., `ollama run llama3:8b`). See [Ollama GitHub](https://github.com/ollama/ollama).
+    *   If using the `ollama` provider, you need Ollama installed, running, and the desired model(s) pulled (e.g., `ollama run llama3:8b`). See [Ollama GitHub](https://github.com/ollama/ollama).
 
 ## Installation
 
 1. **Clone the repository or download the script:**
 2. ```bash
-
+   git clone <repository_url> # Replace with your actual repo URL
+   cd <repository_directory>
    ```
-
-git clone <repository_url> # Replace with your actual repo URL
-cd <repository_directory>
-
-```
 3. Or simply download the `standalone_ceo_finder.py` file.
 4. **Install required Python packages:**
-5. *   **Core dependency:**
-*   ```bash
-    pip install requests
-    ```
-*   **Install based on the LLM provider(s) you plan to use:**
-*   ```bash
-    # For Gemini
-    pip install google-generativeai
-  
-    # For OpenAI or Groq (Groq uses OpenAI's client library structure)
-    pip install openai
-    ```
-*   **Or install all potential LLM libraries:**
-*   ```bash
-    pip install requests google-generativeai openai
-    ```
-*   *(Optional but recommended)* Create and use a Python virtual environment:
-*   ```bash
-    python -m venv venv
-    source venv/bin/activate # On Windows use `venv\Scripts\activate`
-    pip install -r requirements.txt # If a requirements.txt file is provided
-    # Or install manually as shown above
-    ```
+5. * **Core dependency:**
+   * ```bash
+     pip install requests
+     ```
+   * **Install based on the LLM provider(s) you plan to use:**
+   * ```bash
+     # For Gemini
+     pip install google-generativeai
+     
+     # For OpenAI or Groq (Groq uses OpenAI's client library structure)
+     pip install openai
+     ```
+   * **Or install all potential LLM libraries:**
+   * ```bash
+     pip install requests google-generativeai openai
+     ```
+   * *(Optional but recommended)* Create and use a Python virtual environment:
+   * ```bash
+     python -m venv venv
+     source venv/bin/activate # On Windows use `venv\Scripts\activate`
+     pip install -r requirements.txt # If a requirements.txt file is provided
+     # Or install manually as shown above
+     ```
 
 ## Usage
 
@@ -194,7 +190,7 @@ This project is licensed under the MIT License.
 ```
 MIT License
 
-Copyright (c) 2025 Abood
+Copyright (c) [Year] abd-el-rahman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
