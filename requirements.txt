@@ -1,0 +1,9 @@
+# Core requirement for HTTP requests
+requests
+
+# Optional: Needed if using --llm-provider gemini
+google-generativeai
+
+# Optional: Needed if using --llm-provider openai OR --llm-provider groq
+# (Groq uses the OpenAI client library structure)
+openai
